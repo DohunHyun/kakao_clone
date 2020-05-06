@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        .father{
+            display: flex;
+            justify-content: center space-between;  /*수평 (row일때 default)*/
+            align-items: flex-start;        /*수직*/
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .box{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            /* margin-right: 7.3px; */
+            border: 1px solid black;
+            display: flex;   /* 이건 왜하는거지? */ 
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+
+    </div>
+</body>
+</html>
+
+
+
+<!-- 질문 리스트 
+    1. span과 div 의 차이점은?? -> 띄어쓰기 : span, 엔터 : div
+    2. Box Model
+        Margin  : 박스의 보더에서 바깥쪽으로 있는 간격
+        Border  : 경계 
+        Padding : 박스의 보더에서 안쪽으로 있는 간격
+        Context : 내용
+    3. inline, inline-box 의 차이점은?
+        inline : just text. 서로 옆에 붙는 형태. 폭-높이 박스 적용 불가
+        block : 박스들이 밑으로 붙는것. 옆에 올 수 없음. 폭-높이 적용 가능
+        inline-block : 블록끼리 서로 옆에 둘 수 있음. 폭-높이 적용 가능 
+    4. Position
+        static : default
+        fixed : 고정. 스크롤해도 보임
+        absolute : relative에 상대적으로 포지션, 없으면 본문 body에 맞춤
+        relative : absolute의 부모 역할.
+    5. flex 
+        
+
+
+
+
+    0. 단축키 모음
+        - html.5 = 시작할때 세팅 
+        - .box*5 = box 5개 만들기 
+        - .box{$}*10 = 박스에 순서대로 숫자 주기 * 10개 
+
+
+
+아아아 -->
+
