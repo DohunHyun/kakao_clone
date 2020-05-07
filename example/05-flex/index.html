@@ -23,7 +23,7 @@
             height: 200px;
             /* margin-right: 7.3px; */
             border: 1px solid black;
-            display: flex;   /* 이건 왜하는거지? */ 
+            display: flex;   /* 이건 왜하는거지? content인 숫자 움직이려고!*/ 
             justify-content: center;
             align-items: center;
             color: white;
@@ -66,6 +66,18 @@
         absolute : relative에 상대적으로 포지션, 없으면 본문 body에 맞춤
         relative : absolute의 부모 역할.
     5. flex 
+        father 컨테이너를 플렉스로 선언하면 그안에 종속된 children을 다같이 
+        움직일 수 있다. 일일히 명령 필요 없음.
+        element 또한 움직일 수 있음.
+
+        justity-content : 가로선상 정렬방법 
+        align-items : 세로선상 정렬방법 
+        align-content : 세로선 줄 간격 조절 
+        align-self : align-items을 무시하고 flex요소를 세로선상 정렬 
+        flex-direction : 정렬 방향 
+        flex-wrap : 띄어쓰기 
+        flex-flow : direction wrap 같이. 
+        order : 순서 
         
 
 
